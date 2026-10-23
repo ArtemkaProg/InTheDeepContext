@@ -1,268 +1,251 @@
-# InTheDeep --- World Foundation
-
-**Status:** Foundational concept, early design\
-**Last updated:** 2026-10-23\
-**Purpose:** Preserve the project's core world-design decisions and
-their reasoning.
-
-## 1. Core vision
-
-InTheDeep takes place in a **large, connected ocean with multiple
-geological regions and natural transitions between them**. The world
-should feel like one coherent physical environment, not a collection of
-disconnected levels wearing different biome skins.
-
-The game aims for **high realism and strong grounding in nature**.
-Realism is not a separate mode from visual appeal: scientific
-plausibility is the baseline, while selective artistic emphasis may
-strengthen scale, atmosphere, readability, and mystery without making
-the world feel arbitrary or cartoonishly divided.
-
-Exploration is a central motivation. Players should want to investigate
-unfamiliar terrain, discover unusual natural formations, and understand
-places that initially seem mysterious. The ocean should also contain
-**intrinsically dangerous environments**. Danger is not limited to
-player mistakes or ordinary consequences such as pressure damage; some
-places should be difficult to enter, navigate, or remain in because
-several environmental factors combine.
-
-## 2. Decisions
-
-### DECIDED --- Connected ocean
-
--   The world is one connected oceanic setting with multiple geological
-    regions.
--   Regions should connect through plausible transitions in topography,
-    geology, depth, water conditions, and habitat.
--   Individual regions may have a strong identity, but should not feel
-    like isolated theme-park biomes with hard borders.
--   A region must make sense as part of a broader geological system.
-
-**Reasoning:** The world should support the feeling of travelling
-through a real environment and gradually discovering how its different
-parts relate.
-
-### DECIDED --- High naturalism, with selective artistic emphasis
-
--   The world should be highly realistic and closely grounded in nature.
--   These are one combined goal, not two competing options.
--   Artistic exaggeration is allowed selectively: for example, to make a
-    cliff's scale legible, a silhouette memorable, or a dangerous area
-    readable.
--   Avoid arbitrary colour-coded regions, implausible material changes,
-    or spectacular features placed only because a location needs a new
-    visual theme.
--   Visual variety should emerge primarily from geology, terrain,
-    sediment, light, water movement, and life.
-
-**Reasoning:** Realistic environments can still be visually memorable.
-The goal is not to reproduce the dullest possible version of nature, but
-to create believable places with distinctive compositions.
-
-### DECIDED --- Discovery and environmental danger
-
--   Exploration and the discovery of mysterious places are primary
-    motivations.
--   Environmental danger is also an important part of exploration.
--   Some places should be difficult because of their combined
-    conditions: strong currents, steep or confined terrain, unstable
-    debris, poor visibility, limited routes, temperature anomalies, or
-    other locally justified hazards.
--   Hazards should have an understandable physical cause and, where
-    appropriate, clues the player can observe.
--   The world should not rely only on invisible instant-death rules.
-    Natural laws matter, but danger should also create decisions,
-    anticipation, and navigation challenges.
-
-**Reasoning:** A plausible world becomes compelling when its physical
-properties affect what the player can safely do and when discoveries
-require observation and judgement.
-
-## 3. Design principles
-
-1.  **Geology before biome labels.** Start with geological structure and
-    terrain. Do not start by assigning a large area a colour, creature
-    set, and decorative theme.
-2.  **Continuous transitions.** Changes may be gradual, irregular, or
-    locally abrupt when a real process explains them. Avoid borders that
-    exist only for game-design convenience.
-3.  **Layered causes.** A place's appearance should result from multiple
-    factors: bedrock, sediment, erosion, currents, depth, light,
-    chemistry, and organisms.
-4.  **Variety without randomness.** Distinctive locations should result
-    from coherent combinations of causes, not arbitrary mixing of
-    unrelated assets.
-5.  **Mystery through evidence.** Let unusual formations, traces,
-    material changes, sounds, silhouettes, or ecological patterns
-    suggest that something is worth investigating.
-6.  **Danger through context.** A hazardous place should have a physical
-    explanation and ideally observable signs, even if the player cannot
-    immediately understand them.
-7.  **Scientific humility.** When a geological or biological detail is
-    uncertain, research it or label it as a deliberate fictional
-    extrapolation. Do not present a convenient invention as established
-    science.
-8.  **Playable selection, not total simulation.** The game does not need
-    to simulate every Earth process. It should use simplified rules that
-    preserve the right relationships and produce believable results.
-
-## 4. What "biomes" mean in this project
-
-The word *biome* may still be useful informally, but it should not be
-the primary world-generation unit.
-
-Instead, describe a location through overlapping categories:
-
--   **Geological region:** the broad tectonic or geological setting.
--   **Landform:** the local shape of the seafloor.
--   **Surface material:** sediment, exposed rock, rubble, crusts, or
-    mixed ground.
--   **Habitat:** organisms and communities supported by local
-    conditions.
--   **Water conditions:** depth, light, temperature, currents,
-    visibility, and chemistry.
--   **Local feature:** a specific formation or event that makes a place
-    worth investigating.
--   **Hazard profile:** the conditions that make movement, observation,
-    or survival difficult.
-
-A single place can combine several of these categories. For example, a
-basaltic ridge can contain sediment-filled depressions, exposed pillow
-lava, a small seep community, and a narrow passage with difficult
-currents. It does not need to become four separate biomes.
+# InTheDeep — Фундамент світу
 
-## 5. Realism and visual identity
-
-Visual identity should come from composition and physical detail as much
-as from colour.
+**Статус:** Основна концепція світу, ранній етап проєктування  
+**Останнє оновлення:** 2026-10-23
 
-Useful sources of variety include:
+## 1. Призначення документа
 
--   changes in slope, scale, and silhouette;
--   exposed bedrock versus sediment-covered surfaces;
--   grain size, sediment ripples, rock fractures, and debris deposits;
--   the amount and type of biological cover;
--   light falloff, suspended particles, visibility, and the player's
-    light source;
--   local water movement and its effects on sediment or navigation;
--   contrasts between open spaces and confined passages;
--   isolated formations that break an otherwise continuous landscape.
+Цей документ визначає фундаментальні принципи, за якими будується світ InTheDeep. Він має допомагати приймати узгоджені рішення щодо геології, рельєфу, середовища, біології та дослідження світу.
 
-**Avoid:** making every region use a unique saturated colour palette,
-making the seafloor change material without a geological reason, or
-filling every location with conspicuous landmarks.
+Документ описує **яким має бути світ і за якими принципами його проєктувати**, а не повний перелік локацій, істот або технічних способів реалізації.
 
-## 6. Relationship to the three geological layers
+Основні джерела пов'язаних рішень:
 
-The current conceptual cross-section uses three broad layers beneath the
-water:
+- `GEOLOGY_AND_ENVIRONMENTS.md` — геологічні регіони та середовища.
+- `REFERENCE_CATALOG.md` — референси та джерела для досліджень.
+- `../../Creatures/` — окремі документи про істот.
+- `../../GAME_PLAN.md` — план розробки, побудова зон та технічна реалізація світу.
+- `../../CONTEXT.md` — загальний контекст гри та її механіки.
 
-1.  **Sediment layer:** sand, silt, clay, biogenic material, and rock
-    fragments. Thickness and composition vary by location.
-2.  **Oceanic crust:** predominantly basaltic igneous rocks in many
-    oceanic settings, alongside other rock types depending on geological
-    history.
-3.  **Upper mantle:** hot solid rock that can deform slowly over
-    geological timescales. It is not an open cavern or an ordinary
-    explorable underground layer.
+## 2. Основна концепція світу
 
-This is a simplified model for thinking and documentation, not a claim
-that every location has identical layer thickness or composition. The
-visible seafloor surface is often sediment; in other places, bedrock is
-exposed.
+### 2.1. Єдиний океан
 
-## 7. What is not decided yet
+**Рішення:** Світ InTheDeep — це один цілісний океан із різними геологічними регіонами та природними переходами між ними.
 
-The following must remain open until researched or designed:
+Світ не повинен відчуватися як набір ізольованих рівнів, кожен з яких має власну тему, палітру кольорів і набір істот.
 
--   the exact tectonic setting and map layout of the game's ocean;
--   whether the world is based on a specific real ocean or a fictional
-    composite;
--   the exact number, size, and names of geological regions;
--   the depth range and traversal capabilities of the player;
--   the final list of rock types, sediments, habitats, and organisms;
--   which hazards are simulated and how they affect gameplay;
--   whether the world is hand-authored, procedurally generated, or a
-    hybrid;
--   the degree of geological interaction available to the player;
--   how much of the subsurface is visible or explorable.
+Кожен регіон є частиною ширшої фізичної та геологічної системи. Його особливості мають пояснюватися геологічною історією, рельєфом, водними умовами та екологією.
 
-Do not treat examples in other documents as a final region list.
+Регіони можуть суттєво відрізнятися один від одного, але їхні межі та переходи повинні мати природне пояснення.
 
-## 8. Decision test
+### 2.2. Реалізм із вибірковим художнім перебільшенням
 
-When proposing a new location, ask:
+**Рішення:** Світ має бути максимально правдоподібним і ґрунтуватися на реальній природі, але не зобов'язаний бути буквальною копією Землі.
 
-1.  What geological process or setting could produce this terrain?
-2.  Why does this surface material occur here?
-3.  What would currents, sediment, light, and local chemistry do in this
-    place?
-4.  What organisms could plausibly live here, and why?
-5.  What makes this location visually memorable without breaking
-    naturalism?
-6.  What might the player discover here?
-7.  If the location is dangerous, what physical factors create that
-    danger?
-8.  How does this location transition into the surrounding ocean?
+Наукова правдоподібність є основою. Художнє перебільшення дозволене, коли воно підсилює:
 
-If the only answer is "because this is a new biome," the concept needs
-more work.
+- відчуття масштабу;
+- виразність силуетів і рельєфу;
+- атмосферу та загадковість;
+- читабельність небезпек;
+- емоційне враження від відкриттів.
 
----
+Перебільшення не повинно перетворювати світ на випадковий набір фантастичних декорацій.
 
-## 4. Принципи світу
+### 2.3. Дослідження та небезпечне середовище
 
-### 4.1. Різноманітність
+Дослідження — одна з головних мотивацій гравця. Світ має заохочувати його вивчати незнайомі місця, спостерігати за незвичайними явищами та шукати пояснення побаченому.
 
-**[Рішення]** Світ не має бути однотипним. Потрібні величезні біоми, які суттєво відрізняються один від одного, щоб гравцю не було нудно.
+Небезпека є невіддільною частиною цього досвіду.
 
-**[Рішення]** Біоми беруться з реальності, зокрема з реальних геологічних періодів, наприклад кембрію й ордовику, коли життя розвивалося в Панталасовому океані.
+Деякі місця мають бути складними для дослідження не лише через помилки гравця, а й через поєднання природних чинників: течій, глибини, рельєфу, обмеженої видимості, нестабільних відкладень або незвичних властивостей води.
 
-**[Рішення]** Істоти беруться з тих епох, зокрема вимерлі. Пояснення в грі: вони існували й на Kepler-22b і, на відміну від Землі, вижили.
+Небезпека повинна впливати на рішення гравця, а не зводитися до невидимих правил, які неможливо зрозуміти чи передбачити.
 
-### 4.2. Як пояснити виживання (пропозиції, не затверджено)
+## 3. Основні принципи проєктування світу
 
-**[Пропозиція]** Нащадки, а не копії. Якщо лінія жила ще сотні мільйонів років, вона еволюціонувала б. Тому краще, щоб це були нащадки з тим самим планом тіла, а не ідентичні види (Клоп уже сформульований саме так). Це дає свободу змінювати дизайн.
+### 3.1. Геологія перед назвами біомів
 
-**[Пропозиція]** Причини виживання: на Kepler-22b не було масових вимирань, що вразили ці лінії на Землі (кінець ордовика, пізній девон, кінець пермі), або вони збереглися в ізольованих «сховищах» (відокремлені глибини, особливий хімічний склад води). Земні аналоги: «живі копалини», як-от латимерія, наутилус, мечохвости.
+Проєктування локації починається з її фізичного походження та будови, а не з довільного визначення біому.
 
-### 4.3. Ери як теми біомів (ідеї, не затверджено)
+Перед створенням регіону потрібно зрозуміти:
 
-**[Пропозиція]** Приклади тем:
-- **Кембрійський біом:** дивні членистоногі, безліч форм, що не схожі на нічого сучасного. Сюди природно лягають радіодонти (Omnidens, Клоп). Інші відомі кембрійські істоти для натхнення: Anomalocaris, Opabinia, Hallucigenia.
-- **Ордовицький біом:** відкрита товща води з вертикальними «голками» Endoceras над рифом з губок і криноїдів (так виглядає кадр з `Creatures/Endoceras/2.png`). Інші ідеї: трилобіти, граптоліти, інші наутилоїди.
-- **Девонський біом:** броньовані риби (Dunkleosteus), рифи, мілководдя, ранні євриптериди.
+- який геологічний процес міг утворити цей рельєф;
+- які породи та відкладення тут присутні;
+- як змінювалися поверхня та середовище;
+- які умови підтримують місцеву екосистему;
+- чим ця ділянка відрізняється від навколишнього океану.
 
-### 4.4. Головна проблема біому (пропозиція, не затверджено)
+Термін «біом» можна використовувати для опису екологічно характерної території, але він не повинен бути єдиною або основною одиницею побудови світу.
 
-**[Пропозиція]** Біоми мають відрізнятися не лише виглядом, а й тим, яку головну проблему ставлять гравцю: видимість і навігація, гази й склад води, тиск і глибина, екологія, що реагує на шум. Тоді гравець змінює поведінку й обладнання, а не просто бачить іншу картинку.
+### 3.2. Природні переходи
 
-### 4.5. Глибше означає давніше (пропозиція, не затверджено)
+Зміни рельєфу, геології, глибини та умов середовища повинні відбуватися поступово або мати пояснення, якщо вони різкі.
 
-**[Пропозиція]** Біля поверхні фауна ближча до сучасної, а що глибше спускається гравець, то давніші лінії зустрічає. Це підсилює відчуття, що гравець «пірнає в минуле».
+Наприклад, перехід від базальтового хребта до осадової рівнини може проходити через ділянки накопичення уламків і поступового покриття породи осадом.
 
----
+Різкі обриви, розломи, печери та інші виразні межі допустимі, якщо вони випливають із геології або інших процесів.
 
-## 9. Додаткові відкриті питання світу
+Не слід створювати штучні кордони лише тому, що так зручніше розділити ігрові зони.
 
-- **[Відкрито]** Які біоми будуть і з яких епох.
-- **[Відкрито]** Чи приймається ідея «глибше означає давніше».
+### 3.3. Кілька причин формують одне середовище
 
-## 10. Загальні принципи великих істот
+Зовнішній вигляд місця має виникати з поєднання чинників, а не з одного декоративного рішення.
 
-**[Рішення]** У грі є великі підводні істоти «левіафан-класу», але це не копія Subnautica.
+До таких чинників належать:
 
-**[Рішення]** Великі істоти не повинні автоматично переслідувати гравця лише тому, що помітили його. Вони можуть боятися гравця й захищатися, якщо він втручається в їхню територію або поведінку.
+- геологічна будова та типи порід;
+- склад і товщина донних відкладень;
+- ерозія, осипання та інші процеси формування рельєфу;
+- глибина, освітлення та видимість;
+- температура, течії та хімічний склад води;
+- живі організми й екологічні взаємодії.
 
-**[Рішення]** Страх має народжуватися з невизначеності: гравець не знає, де істота перебуває та як вона поводитиметься.
+Не кожен чинник повинен бути однаково важливим у кожній локації. Головне — щоб їхнє поєднання було правдоподібним.
 
-**[Рішення]** Поведінка кожної великої істоти унікальна.
+### 3.4. Різноманітність без випадковості
 
-**[Пропозиція]** Загальні принципи:
-1. Не використовувати універсальну схему «побачив — переслідує».
-2. Поведінка має випливати з потреби та внутрішнього стану, а не з одного скрипту.
-3. Сенсорна модель істоти (слух, зір, вібрації тощо) має бути зрозумілою й потенційно досліджуваною гравцем через прилади та експерименти.
-4. Різні істоти повинні мати різні поведінкові архетипи.
-5. Обов'язкові зустрічі варто обмежувати, щоб зберегти їхню напругу.
+Регіони мають відрізнятися рельєфом, масштабом, матеріалами, освітленням, біологічним покривом і характером дослідження.
 
+Однак не потрібно надавати кожному регіону окрему насичену палітру кольорів або унікальний набір декорацій лише для того, щоб гравець одразу впізнавав його.
 
+Візуальна різноманітність має виникати насамперед із фізичних властивостей середовища.
+
+### 3.5. Загадковість через спостереження
+
+Світ має викликати запитання, на які гравець поступово знаходить відповіді.
+
+Джерелами загадковості можуть бути:
+
+- незвичайні геологічні формації;
+- сліди діяльності організмів;
+- зміни складу або кольору відкладень;
+- звуки, силуети та рухи у воді;
+- незвичні екологічні закономірності;
+- природні явища, які спочатку складно пояснити.
+
+Загадковість не повинна залежати виключно від прихованих сюжетних об'єктів. Саме природне середовище може бути предметом дослідження.
+
+### 3.6. Небезпека повинна мати причину
+
+Небезпечні ділянки мають виникати з конкретних фізичних або біологічних умов.
+
+Наприклад, сильна течія у вузькому проході, погана видимість у завислому осаді або нестабільні схили можуть ускладнювати навігацію.
+
+Коли це доречно, гравець повинен мати змогу помітити ознаки небезпеки й поступово зрозуміти її природу.
+
+Це не означає, що всі небезпеки мають бути очевидними з першого погляду. Невизначеність важлива для атмосфери, але наслідки повинні бути достатньо обґрунтованими.
+
+### 3.7. Наукова обґрунтованість
+
+Реальні наукові відомості, обґрунтовані припущення та художні вигадки потрібно розрізняти.
+
+Якщо певне геологічне або біологічне рішення не має достатнього наукового підтвердження, його потрібно дослідити або явно позначити як свідому фантастичну екстраполяцію.
+
+Правдоподібність важливіша за удавану наукову точність.
+
+### 3.8. Спрощення заради гри
+
+InTheDeep не зобов'язана моделювати всі природні процеси з науковою точністю.
+
+Можна використовувати спрощені правила, якщо вони зберігають важливі причинно-наслідкові зв'язки та створюють переконливий результат.
+
+Наприклад, ігрова модель течій може бути простішою за реальну гідродинаміку, але її вплив на осад, видимість і рух гравця повинен бути послідовним.
+
+## 4. Як описувати окрему локацію
+
+Під час проєктування нової локації слід розглядати її через кілька незалежних, але пов'язаних характеристик.
+
+| Характеристика | Що потрібно визначити |
+|---|---|
+| Геологічний регіон | До якої ширшої геологічної системи належить місце |
+| Форма рельєфу | Хребет, рівнина, каньйон, розлом, печера тощо |
+| Матеріал поверхні | Осад, оголена порода, уламки, кірки або їх поєднання |
+| Умови води | Глибина, освітлення, температура, течії, видимість і хімічні властивості |
+| Середовище існування | Які організми можуть тут жити та чому |
+| Особливі утворення | Що робить місце незвичайним або цікавим для дослідження |
+| Небезпеки | Які умови ускладнюють рух, спостереження або виживання |
+| Переходи | Як локація з'єднується з навколишнім середовищем |
+
+Одна локація може поєднувати кілька типів рельєфу, матеріалів і середовищ існування.
+
+Наприклад, базальтовий хребет може містити западини, заповнені осадом, оголені ділянки лави, невеликий осередок хемосинтетичного життя та вузький прохід із сильними течіями. Це не вимагає поділу території на чотири окремі біоми.
+
+## 5. Візуальна ідентичність
+
+Виразність локації має виникати не лише з кольорів, а й із композиції та фізичних деталей.
+
+Основні джерела візуальної різноманітності:
+
+- зміни висоти, нахилу, масштабу та силуетів;
+- контраст оголеної породи й поверхонь, вкритих осадом;
+- тріщини, уламки, хвилясті сліди осаду та інші деталі рельєфу;
+- щільність і характер біологічного покриву;
+- розсіювання світла, завислі частинки й обмежена видимість;
+- вплив течій на осад та навколишні об'єкти;
+- контраст відкритого простору й вузьких проходів;
+- поодинокі виразні формації, що порушують звичний силует ландшафту.
+
+Слід уникати:
+
+- довільної зміни матеріалів без геологічного пояснення;
+- надмірно насичених і штучно розділених кольорових схем;
+- великої кількості помітних об'єктів у кожній локації;
+- повторення однакової композиції з іншими декораціями.
+
+Не кожне місце повинно мати унікальну пам'ятку. Іноді переконливість і атмосфера виникають саме з масштабного, стриманого й майже незайманого ландшафту.
+
+## 6. Геологічні шари
+
+Для концептуального опису надр океану використовуються три основні шари.
+
+### 6.1. Шар осадів
+
+Може містити пісок, мул, глину, біогенний матеріал і уламки порід.
+
+Товщина, склад і розподіл осадів змінюються залежно від місцевої геології, рельєфу та умов накопичення.
+
+### 6.2. Океанічна кора
+
+Складається переважно з магматичних порід, зокрема базальтів, у багатьох типах океанічного середовища.
+
+Залежно від геологічної історії можливі й інші породи та структури.
+
+Кора може бути вкрита осадом або виходити безпосередньо на поверхню морського дна.
+
+### 6.3. Верхня мантія
+
+Складається з гарячої твердої породи, здатної повільно деформуватися протягом геологічного часу.
+
+Це не відкрита підземна порожнина й не звичайний шар, доступний для дослідження гравцем.
+
+Ця трирівнева схема є спрощеною концептуальною моделлю. Вона не означає, що всі ділянки світу мають однакову товщину шарів або ідентичний склад.
+
+Детальніше геологічні особливості та способи їх використання під час проєктування регіонів описуються в `GEOLOGY_AND_ENVIRONMENTS.md`.
+
+## 7. Межі цього документа
+
+Цей документ визначає принципи, але не затверджує остаточний перелік регіонів або всі подробиці світу.
+
+Поки що відкритими залишаються:
+
+- точна геологічна історія та тектонічне середовище океану;
+- питання, чи буде світ заснований на конкретному реальному океані або на вигаданому поєднанні геологічних умов;
+- остаточна кількість, розміри та назви регіонів;
+- доступний гравцеві діапазон глибин і можливості переміщення;
+- остаточний перелік порід, осадів, середовищ існування та організмів;
+- перелік природних небезпек, які будуть змодельовані в ігровому процесі;
+- ступінь геологічної взаємодії, доступної гравцеві;
+- обсяг підземного середовища, який буде видимим або доступним для дослідження.
+
+**Спосіб побудови світу:** відповідно до поточного плану розробки, світ проєктується вручну як єдине ціле, зона за зоною. Процедурні методи можуть використовуватися всередині зон для окремих елементів. Деталі реалізації та можливі зміни цього плану належать до `GAME_PLAN.md`.
+
+Приклади регіонів, істот або природних явищ в інших документах не є автоматично затвердженим переліком усього світу.
+
+## 8. Перевірка нових концепцій
+
+Перш ніж додавати нову локацію, потрібно відповісти на такі запитання:
+
+1. Який геологічний процес або тип середовища міг утворити цей рельєф?
+2. Чому саме тут присутні ці породи та відкладення?
+3. Як на це місце впливають течії, осад, освітлення та хімічні властивості води?
+4. Які організми можуть тут існувати й чим обумовлена їхня присутність?
+5. Що робить локацію візуально виразною без порушення загального реалізму?
+6. Що гравець може тут виявити або зрозуміти?
+7. Якщо місце небезпечне, які фізичні або біологічні чинники створюють небезпеку?
+8. Як локація переходить у навколишній ландшафт?
+9. Чи узгоджується вона з уже прийнятими рішеннями про світ?
+10. Які твердження підтверджені науково, а які є припущеннями або художніми вигадками?
+
+Якщо єдина причина існування локації — те, що вона повинна бути ще одним біомом, концепція потребує доопрацювання.
