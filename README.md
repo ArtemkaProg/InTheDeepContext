@@ -1,19 +1,25 @@
-# InTheDeep world-document reorganization
+# InTheDeep — документація
 
-This package contains the merged world foundation and individual creature files.
+InTheDeep — підводна гра про дослідження океану, виживання та небезпеки, що виникають із фізики середовища, геології й поведінки істот.
 
-## Files
+## З чого починати
+1. `CONTEXT.md` — короткий огляд гри й ключові обмеження.
+2. `CLAUDE.md` — правила роботи Claude Code.
+3. `GAME_PLAN.md` — план розробки.
+4. `Concepts/World/WORLD_FOUNDATION.md` — принципи світу.
+5. `Concepts/World/GEOLOGY_AND_ENVIRONMENTS.md` — геологічні середовища.
+6. `Concepts/World/REFERENCE_CATALOG.md` — референси, для яких важливі джерело або конкретне призначення.
+7. `Mechanics/` — окремі механіки.
+8. `Creatures/` — профілі істот.
 
-- `Concepts/World/WORLD_FOUNDATION.md` — merged world foundation, general world principles, geological model, and general large-creature principles.
-- `Creatures/Klop.md` — the detailed Klop profile and its cave biome.
-- `Creatures/Endoceras.md` — Endoceras profile.
-- `Creatures/Dunkleosteus.md` — Dunkleosteus profile.
-- `Creatures/Omnidens.md` — Omnidens profile.
+## Правило документації
+Кожне рішення має одне основне місце зберігання. Інші документи посилаються на нього, а не копіюють довгі описи.
 
-## Important note
+- Загальні принципи світу — `Concepts/World/WORLD_FOUNDATION.md`.
+- Геологія — `Concepts/World/GEOLOGY_AND_ENVIRONMENTS.md`.
+- Конкретні істоти — їхні файли в `Creatures/`.
+- Механіки — відповідні файли в `Mechanics/`.
+- `CONTEXT.md` — огляд і ключові правила.
+- `GAME_PLAN.md` — процес і технічний план.
 
-The original `WORLD_AND_CREATURES.md` contains **four** creature profiles: Klop, Endoceras, Dunkleosteus, and Omnidens. Therefore, four individual files were created so that no creature-specific information is lost.
-
-The old file's unique general world principles were merged into `WORLD_FOUNDATION.md`. Before deleting `WORLD_AND_CREATURES.md` from the repository, search for references to it and confirm all of its information has been migrated. Update links and any references in `CONTEXT.md`, `GAME_PLAN.md`, and `CLAUDE.md` if present.
-
-No project decisions were silently changed; labels such as `[Рішення]`, `[Пропозиція]`, and `[Відкрито]` were preserved where applicable.
+Позначки: **[Рішення]** — затверджено автором; **[Пропозиція]** — не затверджено; **[Відкрито]** — питання не вирішене.
