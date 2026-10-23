@@ -1,50 +1,28 @@
-# InTheDeep --- World Concept
+# InTheDeep — документація світу
 
-This folder contains the early world-design foundation for
-**InTheDeep**. It is intentionally small and conceptual: it records
-agreed direction without pretending that undecided details are already
-final.
+Ця папка містить принципи побудови світу InTheDeep, робочий геологічний довідник і матеріали для візуальних референсів. Документи описують поточний напрям, але не всі деталі вже затверджені.
 
-## Files
+## Документи
 
--   [`WORLD_FOUNDATION.md`](WORLD_FOUNDATION.md) --- the core vision,
-    principles, and design constraints.
--   [`GEOLOGY_AND_ENVIRONMENTS.md`](GEOLOGY_AND_ENVIRONMENTS.md) --- the
-    proposed way to describe connected geological regions, seafloor
-    forms, surface materials, habitats, and environmental hazards.
--   [`REFERENCE_CATALOG.md`](REFERENCE_CATALOG.md) --- visual and
-    scientific references with embedded images, source links, and notes
-    on what to study.
--   [`references/README.md`](references/README.md) --- guidance for
-    adding locally saved reference images later.
+- [WORLD_FOUNDATION.md](WORLD_FOUNDATION.md) — основне бачення та затверджені принципи світу.
+- [GEOLOGY_AND_ENVIRONMENTS.md](GEOLOGY_AND_ENVIRONMENTS.md) — геологічні області, форми рельєфу, матеріали й середовища.
+- [REFERENCE_CATALOG.md](REFERENCE_CATALOG.md) — зовнішні наукові та візуальні джерела.
+- [references/](references/) — локально збережені референси; [README](references/README.md) пояснює їхнє використання.
 
-## How Claude Code should use these files
+## Як читати документацію
 
-1.  Read `WORLD_FOUNDATION.md` first.
-2.  Treat statements marked **DECIDED** as current project direction.
-3.  Treat statements marked **PROPOSAL** as ideas to evaluate, not
-    immutable requirements.
-4.  Treat statements marked **OPEN QUESTION** as unresolved. Ask before
-    making major decisions.
-5.  Use reference images to study real shapes, textures, scale, and
-    natural transitions. Do not copy one photograph as an entire game
-    area.
-6.  Keep new decisions consistent with the foundation, or explicitly
-    propose a revision rather than silently contradicting it.
+1. Починати з `WORLD_FOUNDATION.md`, потім відкривати матеріали, потрібні для конкретного завдання.
+2. **[Рішення]** — затверджена автором домовленість; **[Пропозиція]** — ідея для оцінювання; **[Відкрито]** — питання без остаточного рішення.
+3. Не перетворювати приклади геологічних областей на затверджений список ігрових біомів.
+4. Якщо документи суперечать один одному, повідомити про це й не обирати нове ігрове рішення самостійно.
+5. Оновлювати документ, якому належить рішення, а не дублювати довгі пояснення в кількох місцях.
 
-## Important scope note
+## Межі цього розділу
 
-These documents define the *world concept*, not the final map, story,
-creature roster, procedural-generation algorithm, or Unity
-implementation. Those should be developed later and should follow from
-this foundation.
+Ці файли не визначають остаточну карту, сюжет, список істот чи реалізацію Unity. Для загального огляду див. [CONTEXT.md](../../CONTEXT.md), для плану розробки — [GAME_PLAN.md](../../GAME_PLAN.md), для істот — [Creatures/](../../Creatures/).
 
-## Reference-image note
+## Референси
 
-The reference catalog embeds images from NOAA / USGS source pages where
-available. Keep the source links and credit information when reusing
-images. NOAA notes that most of its content is public domain unless an
-individual item says otherwise; credit NOAA and do not imply government
-endorsement. Check the individual source page before redistribution. The
-catalog currently links to web-hosted images rather than duplicating
-them as local files.
+Локальні зображення вже зберігаються в `references/`. Каталог доповнює їх зовнішніми джерелами та пояснює лише важливі особливості. Саме розташування файлу в папці не гарантує, що Claude Code переглянув зображення: для візуального аналізу потрібно відкрити його доступним інструментом.
+
+Для матеріалів NOAA та інших установ перевіряти кредитування й умови використання кожного конкретного зображення перед публікацією або перенесенням у гру.
