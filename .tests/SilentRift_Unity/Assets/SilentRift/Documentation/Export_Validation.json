@@ -1,0 +1,36 @@
+{
+  "meshCount": 248,
+  "triangles": 950685,
+  "meshesWithoutUV": 0,
+  "sourceBoundsMeters": [
+    [
+      -100.0,
+      100.0
+    ],
+    [
+      -100.0,
+      100.0
+    ],
+    [
+      -20.0,
+      19.655973434448242
+    ]
+  ],
+  "fbxBoundsMeters": [
+    [
+      -100.0,
+      100.0
+    ],
+    [
+      -100.0,
+      100.0
+    ],
+    [
+      -20.00000762939453,
+      19.65597152709961
+    ]
+  ],
+  "boundsMaxError": 7.62939453125e-06,
+  "passed": true,
+  "unityEditorTested": false
+}
