@@ -7,6 +7,8 @@
 - Mechanics/ contains gameplay-system documentation.
 - GAME_PLAN.md tracks development priorities.
 - InTheDeep_ClaudeCode_Unity_Workflow.md defines the development workflow.
+- CLAUDE_CODE_TOKEN_OPTIMIZATION.md describes practical token, prompt-cache,
+  session and Unity CLI log optimization; use it when configuring the workflow.
 - If two documents conflict, do not silently choose one.
   Identify the conflict and ask which decision is authoritative.
 - Update the document that owns a decision instead of copying
