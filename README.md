@@ -6,6 +6,7 @@ InTheDeep — підводна гра про дослідження океану
 1. `CONTEXT.md` — короткий огляд гри й ключові обмеження.
 2. `CLAUDE.md` — правила роботи Claude Code.
 3. `GAME_PLAN.md` — план розробки.
+   `DESIGN_DECISION_WORKFLOW.md` — як виявляти прогалини в геймдизайні та фіксувати рішення без дублювання.
 4. `Concepts/World/WORLD_FOUNDATION.md` — принципи світу.
 5. `Concepts/World/GEOLOGY_AND_ENVIRONMENTS.md` — геологічні середовища.
 6. `Concepts/World/REFERENCE_CATALOG.md` — референси, для яких важливі джерело або конкретне призначення.
