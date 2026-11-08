@@ -2,6 +2,7 @@
 
 - Read CONTEXT.md for the project overview and key constraints.
 - Read only the documents relevant to the current task.
+- For navigation by short IDs (e.g. SYS-INV, WLD-GEO, CRE-KLOP), consult SYSTEM_INDEX.md and open the linked owner document. The ID identifies a topic/system, not an approved individual decision. Do not read all indexed documents by default.
 - For modular 3D assets (vehicles, machines, buildings, equipment), follow `.claude/rules/modular-modeling.md` before creating Blender geometry or Unity prefabs.
 - Concepts/World/ defines world-design principles and geological guidance.
 - Creatures/ contains creature-specific documentation.
