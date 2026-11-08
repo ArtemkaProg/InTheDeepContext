@@ -7,6 +7,7 @@
 - Creatures/ contains creature-specific documentation.
 - Mechanics/ contains gameplay-system documentation.
 - GAME_PLAN.md tracks development priorities.
+- DESIGN_DECISION_WORKFLOW.md provides an optional, focused method for finding design gaps, asking prioritized questions, and documenting decisions without duplicating source files. Do not launch a full questionnaire automatically.
 - InTheDeep_ClaudeCode_Unity_Workflow.md defines the development workflow.
 - CLAUDE_CODE_TOKEN_OPTIMIZATION.md describes practical token, prompt-cache,
   session and Unity CLI log optimization; use it when configuring the workflow.
