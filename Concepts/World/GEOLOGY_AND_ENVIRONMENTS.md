@@ -293,3 +293,13 @@ Use this template for future location concepts:
 
 Do not create a final catalogue of regions until the overall geological
 layout is chosen.
+
+## 8. Confirmed tectonic-region design direction (November 2026)
+
+**[Decision]** InTheDeep should feature **multiple geologically distinct tectonic settings** distributed through the connected ocean, not just one or two spectacle locations. Include spreading/rift settings, subduction-related trenches and structures, and transform-fault/fracture zones. These are geological processes, not hard-bounded gameplay biomes.
+
+**[Decision — approved location concept]** An **active oceanic rift area with partly solidified lava flows**, basaltic terrain, faults, localized hydrothermal circulation, thermal and chemical anomalies, and potentially associated mineral deposits. The discovery comes from observing connected geological processes, not crossing a visually arbitrary region border.
+
+**[Decision]** Do not simulate plate displacement across gameplay time. Historical tectonic motion can be embodied in terrain, materials, and localized events. Avoid placing magma at every plate boundary; transform faults need not host active volcanism.
+
+See [GEOCHEMISTRY_AND_RESOURCES.md](GEOCHEMISTRY_AND_RESOURCES.md) for agreed resource, water-chemistry, and extraction principles. Exact locations, numbers, sizes and deposit yields remain open.
