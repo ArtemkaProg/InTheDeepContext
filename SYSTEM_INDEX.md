@@ -19,6 +19,7 @@
 |---|---|---|---|
 | `SYS-INV` | Інвентар і вантажна логістика | [INVENTORY_AND_LOGISTICS.md](Mechanics/Inventory/INVENTORY_AND_LOGISTICS.md) | Тетріс-сітка, переносне обладнання, великі вантажі |
 | `SYS-CNS` | Виготовлення, будівництво й автоматизований монтаж | [CONSTRUCTION_AND_MANUFACTURING.md](Mechanics/Construction/CONSTRUCTION_AND_MANUFACTURING.md) | Правила виробництва та монтажу |
+| `SYS-CHM` | Речовини, фізичні ємності, доступна хімія | [SUBSTANCES_AND_CONTAINERS.md](Mechanics/Chemistry/SUBSTANCES_AND_CONTAINERS.md) | Зберігання речовин, хімічні процеси, межі симуляції та антипатерни для Claude Code |
 | `SYS-RSH` | Аналіз зразків, знання й інженерні дослідження | [RESEARCH_SYSTEM.md](Progression/RESEARCH_SYSTEM.md) | Вибір методів, знання, проєкти |
 | `SYS-PRG` | Загальна структура прогресії | [PROGRESSION_FOUNDATION.md](Progression/PROGRESSION_FOUNDATION.md) | Містить ранні пропозиції; для конкретних механік пріоритет тематичним файлам |
 | `SYS-TEC` | Концепція дерева технологій | [TECHNOLOGY_TREE.md](Progression/TECHNOLOGY_TREE.md) | Переважно draft/пропозиція, не фінальний список рецептів |
